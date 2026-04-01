@@ -128,3 +128,51 @@ footer {
   width: 120px;
   margin-bottom: 10px;
 }
+
+/* RESPONSIVO PARA CELULAR */
+@media (max-width: 768px) {
+
+  header {
+    padding: 20px;
+  }
+
+  header h1 {
+    font-size: 28px;
+  }
+
+  .logo {
+    width: 90px;
+  }
+
+  .banner {
+    font-size: 16px;
+    padding: 20px;
+  }
+
+  .produtos {
+    flex-direction: column;
+    align-items: center;
+    padding: 15px;
+  }
+
+  .produto {
+    width: 90%;
+    max-width: 300px;
+  }
+
+  .sobre {
+    padding: 25px;
+    font-size: 14px;
+  }
+
+  footer {
+    font-size: 14px;
+  }
+
+  .whatsapp-float {
+    bottom: 15px;
+    right: 15px;
+    padding: 12px;
+    font-size: 20px;
+  }
+}
