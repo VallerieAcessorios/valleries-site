@@ -1,0 +1,125 @@
+body {
+  margin: 0;
+  font-family: Arial;
+  background: linear-gradient(#fffafc, #ffe4ec);
+}
+
+/* HEADER */
+header {
+  background: linear-gradient(90deg, #f8c8dc, #e6a4c4);
+  text-align: center;
+  padding: 30px;
+  color: #7a4a5a;
+  animation: fadeIn 1s ease-in;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 42px;
+}
+
+/* BANNER */
+.banner {
+  text-align: center;
+  padding: 40px;
+  background: #fff0f5;
+  color: #b76e79;
+  font-size: 20px;
+}
+
+/* PRODUTOS */
+.produtos {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 30px;
+  flex-wrap: wrap;
+}
+
+.produto {
+  background: white;
+  border-radius: 20px;
+  padding: 15px;
+  width: 220px;
+  text-align: center;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+  transition: 0.3s;
+  position: relative;
+}
+
+.produto::before {
+  content: "💖";
+  position: absolute;
+  top: -10px;
+  right: 10px;
+}
+
+.produto:hover {
+  transform: scale(1.07);
+}
+
+.produto img {
+  width: 100%;
+  border-radius: 12px;
+}
+
+.produto h3 {
+  color: #7a4a5a;
+}
+
+.produto a {
+  display: inline-block;
+  margin-top: 10px;
+  background: linear-gradient(45deg, #d4af37, #f1d77a);
+  color: white;
+  padding: 10px;
+  border-radius: 25px;
+  text-decoration: none;
+}
+
+.produto a:hover {
+  opacity: 0.8;
+}
+
+/* SOBRE */
+.sobre {
+  text-align: center;
+  padding: 40px;
+  background: #ffe4ec;
+  color: #7a4a5a;
+}
+
+/* FOOTER */
+footer {
+  background: #f8c8dc;
+  text-align: center;
+  padding: 20px;
+  color: #7a4a5a;
+}
+
+/* BOTÃO WHATSAPP */
+.whatsapp-float {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: #25D366;
+  color: white;
+  font-size: 24px;
+  padding: 15px;
+  border-radius: 50%;
+  text-decoration: none;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+  animation: pulse 2s infinite;
+}
+
+/* ANIMAÇÕES */
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+@keyframes pulse {
+  0% {transform: scale(1);}
+  50% {transform: scale(1.1);}
+  100% {transform: scale(1);}
+}
